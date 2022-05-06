@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="928fb21b-68de-4042-8d02-42fde92ec92f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/index/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoFilm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoFilm/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoFilm/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoFilm/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/news.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/news.log" afterDir="false" />
-    </list>
+    <list default="true" id="928fb21b-68de-4042-8d02-42fde92ec92f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,11 +73,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651800934364</updated>
-      <workItem from="1651800936213" duration="4555000" />
+      <workItem from="1651800936213" duration="4863000" />
     </task>
+    <task id="LOCAL-00001" summary="首页">
+      <created>1651805819951</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651805819951</updated>
+    </task>
+    <task id="LOCAL-00002" summary="首页">
+      <created>1651806086135</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651806086135</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="首页" />
+    <option name="LAST_COMMIT_MESSAGE" value="首页" />
   </component>
 </project>
