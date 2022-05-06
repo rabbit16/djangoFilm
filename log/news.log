@@ -1,0 +1,9 @@
+INFO 2022-05-06 09:44:54,449 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-06 09:45:49,318 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-06 09:46:38,573 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-06 09:48:40,286 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-06 09:48:42,582 basehttp 161 "GET / HTTP/1.1" 200 10633
+INFO 2022-05-06 09:48:42,609 basehttp 161 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2022-05-06 09:48:42,660 basehttp 161 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2022-05-06 09:48:42,661 basehttp 161 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2022-05-06 09:48:42,663 basehttp 161 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
