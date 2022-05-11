@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-6qsb+q#*jw^s4apu^+7g2a(@8l=2d@tbk4ni7ywrvwnp5*n&()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -131,7 +131,7 @@ CACHES = {
             "OPTIONS": {
                 "CLIENT_CLASS": "django_redis.client.DefaultClient",
             }
-        },
+    },
 }
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'  # 指定存储的引擎
 SESSION_CACHE_ALIAS = 'session'  # 指定别名
@@ -203,6 +203,7 @@ MEDIA_URL = '/media/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # 用于存放静态文件
 ]
+AUTH_USER_MODEL = 'index.User'  # 指定替换的用户模型类
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 

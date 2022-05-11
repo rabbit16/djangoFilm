@@ -1,3 +1,5 @@
+import json
+
 from django.shortcuts import render
 
 # Create your views here.
@@ -8,3 +10,24 @@ class index(View):
 
     def get(self, request):
         return render(request, "index/index.html")
+
+    def post(self, request):
+        pass
+
+class Login(View):
+
+    def get(self, request):
+        return render(request, "index/register.html")
+
+    def post(self, request):
+        return json.dumps({
+            "errno": '1'
+        })
+#
+# class Register(View):
+#
+#     def get(self, request):
+#         return render(request, "index/register.html")
+#
+#     def post(self, request):
+#         pass

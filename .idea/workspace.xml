@@ -3,8 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="928fb21b-68de-4042-8d02-42fde92ec92f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/index/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/index/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoFilm/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoFilm/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoFilm/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoFilm/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/news.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/news.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/dbs/my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/utils/dbs/my.cnf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +89,8 @@
       <option name="presentableId" value="Default" />
       <updated>1651800934364</updated>
       <workItem from="1651800936213" duration="7526000" />
-      <workItem from="1651835676253" duration="720000" />
+      <workItem from="1651835676253" duration="4271000" />
+      <workItem from="1652272480411" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="首页">
       <created>1651805819951</created>
@@ -115,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651807527544</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="首页">
+      <created>1651836403664</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651836403664</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
