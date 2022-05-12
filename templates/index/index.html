@@ -6,11 +6,15 @@
     <title><title>{% block title %}{% endblock %}</title></title>
 <!--    设置标签图标-->
     {% block link %}
-        <link rel="stylesheet" href="{% static 'css/goods_list.css' %}">
-{#    <link rel="stylesheet" href="css/next_page.css">#}
-        <link rel="stylesheet" href="{% static 'css/next_page.css' %}">
-          <link rel="shortcut icon" href="{% static "images/camera.ico" %}">
         <link rel="stylesheet" href="{% static 'css/index1.1.css' %}">
+        <link rel="stylesheet" href="{% static 'css/goods_list.css' %}">
+
+{#        <link rel="stylesheet" href="css/footer.css">#}
+{#		<link rel="stylesheet" href="css/header.css">#}
+{#    <link rel="stylesheet" href="css/next_page.css">#}
+{#        <link rel="stylesheet" href="{% static 'css/next_page.css' %}">#}
+{#          <link rel="shortcut icon" href="{% static "images/camera.ico" %}">#}
+
     {% endblock %}
 {#    <link rel="shortcut icon" href="images/camera.ico">#}
 
@@ -40,7 +44,7 @@
             <!-- 中部右侧-->
             <div class="h_top_right">
                 <a href="{% url 'index:login' %}">登录</a>
-                <a href="regist.html">免费注册</a>
+                <a href="{% url 'index:register' %}">免费注册</a>
                 <a href="#">购物车</a>
                 <a href="#">我的订单</a>
             </div>
@@ -52,7 +56,8 @@
     <div class="header_center">
 <!--        中部左边logo-->
         <div class="h_c_logo">
-            <img src="images/logo.png" alt="">
+{#            <img src="images/logo.png" alt="">#}
+            <img src="{% static 'images/logo.png' %}" alt="">
         </div>
         <div class="h_c_search">
             <form action="#">
@@ -90,20 +95,16 @@
 {% block banner %}
     <div id="ad" style="text-align: center;">
     <ul id="ad_img" >
-        <li><img src="images/banner/1.jpg" width="1100" height="600" /></li>
-        <li><img src="images/banner/2.jpg" width="1100" height="600" /></li>
-        <li><img src="images/banner/3.jpg" width="1100" height="600" /></li>
-        <li><img src="images/banner/4.jpg" width="1100" height="600" /></li>
-        <li><img src="images/banner/5.jpg" width="1100" height="600" /></li>
-    </ul>
-
-    <ul id="ad_num">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <!--<li>6</li>-->
+{#        <li><img src="images/banner/1.jpg" width="1100" height="600" /></li>#}
+        <li><img src="{% static 'images/banner/heidi.png' %}" width="1100" height="600" /></li>
+        <li><img src="{% static 'images/banner/heidi.png' %}" width="1100" height="600" /></li>
+        <li><img src="{% static 'images/banner/heidi.png' %}" width="1100" height="600" /></li>
+        <li><img src="{% static 'images/banner/heidi.png' %}" width="1100" height="600" /></li>
+{#        <li><img src="{% static 'images/banner/heidi.png' %}" width="1100" height="600" /></li>#}
+{#        <li><img src="images/banner/2.jpg" width="1100" height="600" /></li>#}
+{#        <li><img src="images/banner/3.jpg" width="1100" height="600" /></li>#}
+{#        <li><img src="images/banner/4.jpg" width="1100" height="600" /></li>#}
+{#        <li><img src="images/banner/5.jpg" width="1100" height="600" /></li>#}
     </ul>
 </div>
 {% endblock %}
@@ -112,7 +113,7 @@
 
 
 <!--精选图片-->
-{% block picture %}
+{% block main %}
     <div id="ms">
     <div class="ms_top">
         <span>精选图片</span>

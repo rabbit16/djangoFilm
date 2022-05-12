@@ -1,0 +1,24 @@
+from django.shortcuts import render
+from django.http import HttpResponse, JsonResponse
+from django.shortcuts import render
+from index.models import User
+from django.views import View
+from utils.captcha.captcha import captcha
+from django_redis import get_redis_connection
+import logging
+from utils.res_code import to_json_data
+# Create your views here.
+logger = logging.getLogger('django')
+
+# Create your views here.
+
+class ImageCode(View):
+
+    def get(self, request, img_codes):
+        code, image = captcha.generate_captcha()
+        con_redis = get_redis_connection('verify_codes')
+        redis_key = 'img_{}'.format(img_codes)
+        con_redis.setex(redis_key, 60, code)
+        logger.info("IMAGE_CODE {}".format(code))
+        return HttpResponse(content=image, content_type="image/jpg")
+

@@ -1,5 +1,5 @@
 import json
-
+from django.http import JsonResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -17,17 +17,21 @@ class index(View):
 class Login(View):
 
     def get(self, request):
-        return render(request, "index/register.html")
+        return render(request, "index/login.html")
 
     def post(self, request):
         return json.dumps({
             "errno": '1'
         })
 #
-# class Register(View):
+class Register(View):
 #
-#     def get(self, request):
-#         return render(request, "index/register.html")
+    def get(self, request):
+        return render(request, "index/register.html")
 #
-#     def post(self, request):
-#         pass
+    def post(self, request):
+        data = request.POST
+        print(data["username"])
+        return JsonResponse({
+            "hello": 2
+        })
