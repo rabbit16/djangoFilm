@@ -30,7 +30,7 @@ class Register(View):
         return render(request, "index/register.html")
 #
     def post(self, request):
-        data = request.POST
+        data = json.loads(request.body)
         print(data["username"])
         return JsonResponse({
             "hello": 2

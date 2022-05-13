@@ -22,3 +22,21 @@ class ImageCode(View):
         logger.info("IMAGE_CODE {}".format(code))
         return HttpResponse(content=image, content_type="image/jpg")
 
+class UserNameCheck(View):
+
+    def get(self, request, username):
+        data = {
+            "username": username,
+            'count': User.objects.filter(username=username).count()
+        }
+        return to_json_data(data=data)
+
+class MobileCheck(View):
+    def get(self, request, mobile):
+        data = {
+            'mobile': mobile,
+            'count': User.objects.filter(mobile=mobile).count()
+        }
+        return to_json_data(data=data)
+
+

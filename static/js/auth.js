@@ -29,86 +29,7 @@ $(function () {
     fn_check_mobile();
   });
 
-
   // 4、发送短信验证码逻辑
-  $smsCodeBtn.click(function () {
-    // 判断手机号是否输入
-    if (fn_check_mobile() !== "success") {
-      return
-    }
-
-    // 判断用户是否输入图片验证码
-    let text = $imgCodeText.val();  // 获取用户输入的图片验证码文本
-    if (!text) {
-        message.showError('请填写验证码！');
-        return
-    }
-
-    if (!sImageCodeId) {
-      message.showError('图片UUID为空');
-      return
-    }
-
-    // 正常
-    let SdataParams = {
-      "mobile": $mobile.val(),   // 获取用户输入的手机号
-      "text": text,   // 获取用户输入的图片验证码文本
-      "image_code_id": sImageCodeId  // 获取图片UUID
-    };
-
-    // for test
-    // let SdataParams = {
-    //   "mobile": "1806508",   // 获取用户输入的手机号
-    //   "text": "ha3d",  // 获取用户输入的图片验证码文本
-    //   "image_code_id": "680a5a66-d9e5-4c3c-b8ea"  // 获取图片UUID
-    // };
-
-    // 向后端发送请求
-    $.ajax({
-      // 请求地址
-      url: "/sms_code/",
-      // 请求方式
-      type: "POST",
-      // 向后端发送csrf token
-      // headers: {
-      //           // 根据后端开启的CSRFProtect保护，cookie字段名固定为X-CSRFToken
-      //           "X-CSRFToken": getCookie("csrf_token")
-      // },
-      // data: JSON.stringify(SdataParams),
-      data: JSON.stringify(SdataParams),
-      // 请求内容的数据类型（前端发给后端的格式）
-      contentType: "application/json; charset=utf-8",
-      // 响应数据的格式（后端返回给前端的格式）
-      dataType: "json",
-      async: false
-    })
-      .done(function (res) {
-        if (res.errno === "0") {
-          // 倒计时60秒，60秒后允许用户再次点击发送短信验证码的按钮
-           message.showSuccess('短信验证码发送成功');
-          let num = 60;
-          // 设置一个计时器
-          let t = setInterval(function () {
-            if (num === 1) {
-              // 如果计时器到最后, 清除计时器对象
-              clearInterval(t);
-              // 将点击获取验证码的按钮展示的文本恢复成原始文本
-              $smsCodeBtn.html("获取验证码");
-            } else {
-              num -= 1;
-              // 展示倒计时信息
-              $smsCodeBtn.html(num + "秒");
-            }
-          }, 1000);
-        } else {
-          message.showError(res.errmsg);
-        }
-      })
-      .fail(function(){
-        message.showError('服务器超时，请重试！');
-      });
-
-  });
 
 
   // 5、注册逻辑
@@ -119,32 +40,36 @@ $(function () {
     // 获取用户输入的内容
     let sUsername = $username.val();  // 获取用户输入的用户名字符串
     let sPassword = $("input[name=password]").val(); //指定name的属性选择器，这个是一个jq语法
-    let sPasswordRepeat = $("input[name=password_repeat]").val();
+    // let sPasswordRepeat = $("input[name=password_repeat]").val();
     let sMobile = $mobile.val();  // 获取用户输入的手机号码字符串
-    // let sSmsCode = $("input[name=sms_captcha]").val();
+    let sSmsCode = $("input[name=sms_captcha]").val();
 
-    // // 判断用户名是否已注册
-    // if (fn_check_username() !== "success") {
-    //   return
-    // }
-    //
-    // // 判断手机号是否为空，是否已注册
-    // if (fn_check_mobile() !== "success") {
-    //   return
-    // }
-    //
-    // // 判断用户输入的密码是否为空
+    // 判断用户名是否已注册
+    if (fn_check_username() !== "success") {
+      return
+    }
+
+    // 判断手机号是否为空，是否已注册
+    if (fn_check_mobile() !== "success") {
+      return
+    }
+
+    // 判断用户输入的密码是否为空
     // if ((!sPassword) || (!sPasswordRepeat)) {
     //   message.showError('密码或确认密码不能为空');
     //   return
     // }
-    //
-    // // 判断用户输入的密码和确认密码长度是否为6-20位
+
+    // 判断用户输入的密码和确认密码长度是否为6-20位
     // if ((sPassword.length < 6 || sPassword.length > 20) ||
     //   (sPasswordRepeat.length < 6 || sPasswordRepeat.length > 20)) {
     //   message.showError('密码和确认密码的长度需在6～20位以内');
     //   return
     // }
+    if (sPassword.length < 6 || sPassword.length > 20) {
+      message.showError('密码和确认密码的长度需在6～20位以内');
+      return
+    }
     //
     // // 判断用户输入的密码和确认密码是否一致
     // if (sPassword !== sPasswordRepeat) {
@@ -164,7 +89,7 @@ $(function () {
     let SdataParams = {
       "username": sUsername,
       "password": sPassword,
-      "password_repeat": sPasswordRepeat,
+      // "password_repeat": sPasswordRepeat,
       "mobile": sMobile,
       "picCode": sImageCodeId,
       "picNum": $("#input_captcha").val(),
