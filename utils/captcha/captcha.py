@@ -94,7 +94,7 @@ class Captcha(object):
     def smooth(image):
         return image.filter(ImageFilter.SMOOTH)
 
-    def curve(self, image, width=4, number=6, color=None):
+    def curve(self, image, width=4, number=4, color=None):
         dx, height = image.size
         dx /= number
         path = [(dx * i, random.randint(0, height))
@@ -218,3 +218,7 @@ captcha = Captcha.instance()
 
 if __name__ == '__main__':
     content = captcha.generate_captcha()
+    # print(content[0])
+    # with open("2.jpg", "wb") as f:
+    #     f.write(content[1])
+

@@ -19,7 +19,7 @@ class User(AbstractUser):
     ticketManager = models.BooleanField(verbose_name="票务管理员", help_text="票务管理员", default=False)
     buyManager = models.BooleanField(verbose_name="售票员", help_text="售票员", default=False)
     mobile = models.CharField(max_length=11, verbose_name='手机号', help_text="手机号", unique=True,
-                              error_messages={'unique': "改手机号已注册"})
+                              error_messages={'unique': "该手机号已注册"})
     email_ac = models.BooleanField(default=False, verbose_name="邮箱状态")
     registration_data = models.DateTimeField(verbose_name="注册时间",
                                              help_text="注册时间",

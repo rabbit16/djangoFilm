@@ -1,9 +1,14 @@
 import json
-from django.http import JsonResponse
+
+from django.contrib.auth import login
 from django.shortcuts import render
 
 # Create your views here.
 from django.views import View
+
+from index.models import User
+from utils.res_code import to_json_data, Code, error_map
+from verifications.forms import RegisterForm
 
 
 class index(View):
@@ -25,13 +30,26 @@ class Login(View):
         })
 #
 class Register(View):
-#
+
     def get(self, request):
         return render(request, "index/register.html")
-#
+
     def post(self, request):
-        data = json.loads(request.body)
-        print(data["username"])
-        return JsonResponse({
-            "hello": 2
-        })
+        userInfo = json.loads(request.body.decode())
+        registerForm = RegisterForm(userInfo)
+        #
+        # try:
+        #     if registerForm.is_valid():
+        #         user = User.objects.create_user(username=registerForm.cleaned_data.get('username'),
+        #                                         password=registerForm.cleaned_data.get('password'),
+        #                                         mobile=registerForm.cleaned_data.get('mobile'),
+        #                                         email=registerForm.cleaned_data.get('email'),
+        #                                         )  # TODO 并没有写完整
+        #         login(request, user)
+        #     data = {
+        #         'errno': Code.OK
+        #     }
+        #     return to_json_data(data=data)
+        # except:
+        #     return to_json_data(errno=Code.NODATA, errmsg=error_map[Code.PICERROR])
+        pass

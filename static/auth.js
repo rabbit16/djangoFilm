@@ -7,10 +7,6 @@ $(function () {
   let $smsCodeBtn = $('.form-item .sms-captcha');  // 获取短信验证码按钮元素，需要定义一个id为input_smscode
   let $imgCodeText = $('#input_captcha');  // 获取用户输入的图片验证码元素，需要定义一个id为input_captcha
   let $register = $('.form-contain');  // 获取注册表单元素
-  let $email = $('#Email')
-  let $real_name = $('#rename')
-  let $gender = $('.gender')
-  let $birthday = $('#Birthday')
 
 
   // 1、图片验证码逻辑
@@ -97,10 +93,6 @@ $(function () {
       "mobile": sMobile,
       "picCode": sImageCodeId,
       "picNum": $("#input_captcha").val(),
-      "email": $email.val(),  //TODO 要检查
-      "real_name": $real_name.val(),
-      "birthday": $birthday.val(),
-      "gender": $gender.val()
       // "sms_code": sSmsCode
     };
 
@@ -122,7 +114,7 @@ $(function () {
           message.showSuccess('恭喜你，注册成功！');
            setTimeout(() => {
             // 注册成功之后重定向到主页
-            window.location.href = '';
+            window.location.href = '/article/';
           }, 1500)
         } else {
           // 注册失败，打印错误信息
@@ -265,4 +257,5 @@ $(function () {
       }
     }
   });
+  generateImageCode()
 });
