@@ -58,4 +58,3 @@ class Register(View):
             return to_json_data(data=data)
         except:
             return to_json_data(errno=Code.NODATA, errmsg=error_map[Code.PICERROR])
-        pass
