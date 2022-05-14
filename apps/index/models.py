@@ -26,7 +26,7 @@ class User(AbstractUser):
                                              default=timezone.now
                                              )
     sex = models.BooleanField(verbose_name="性别", help_text="性别", default=True)
-
+    birthday = models.DateTimeField(verbose_name="生日", help_text="生日", default=timezone.now)
     class Meta:
         db_table = 'tb_users'
         verbose_name = '用户'

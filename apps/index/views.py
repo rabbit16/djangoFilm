@@ -36,20 +36,26 @@ class Register(View):
 
     def post(self, request):
         userInfo = json.loads(request.body.decode())
+        if userInfo["gender"] == 'male':
+            userInfo["gender"] = True
+        else:
+            userInfo["gender"] = False
         registerForm = RegisterForm(userInfo)
-        #
-        # try:
-        #     if registerForm.is_valid():
-        #         user = User.objects.create_user(username=registerForm.cleaned_data.get('username'),
-        #                                         password=registerForm.cleaned_data.get('password'),
-        #                                         mobile=registerForm.cleaned_data.get('mobile'),
-        #                                         email=registerForm.cleaned_data.get('email'),
-        #                                         )  # TODO 并没有写完整
-        #         login(request, user)
-        #     data = {
-        #         'errno': Code.OK
-        #     }
-        #     return to_json_data(data=data)
-        # except:
-        #     return to_json_data(errno=Code.NODATA, errmsg=error_map[Code.PICERROR])
+        try:
+            if registerForm.is_valid():
+                user = User.objects.create_user(username=registerForm.cleaned_data.get('username'),
+                                                password=registerForm.cleaned_data.get('password'),
+                                                mobile=registerForm.cleaned_data.get('mobile'),
+                                                email=registerForm.cleaned_data.get('email'),
+                                                sex=registerForm.cleaned_data.get("gender"),
+                                                name=registerForm.cleaned_data.get("real_name"),
+                                                birthday=registerForm.cleaned_data.get("birthday")
+                                                )  # TODO 并没有写完整
+                login(request, user)
+            data = {
+                'errno': Code.OK
+            }
+            return to_json_data(data=data)
+        except:
+            return to_json_data(errno=Code.NODATA, errmsg=error_map[Code.PICERROR])
         pass
