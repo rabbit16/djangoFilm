@@ -113,3 +113,4 @@ WARNING 2022-05-06 10:55:44,026 basehttp 161 "GET /images/gallery/14.jpg HTTP/1.
 WARNING 2022-05-06 10:55:44,026 basehttp 161 "GET /images/gallery/15.jpg HTTP/1.1" 404 2203
 WARNING 2022-05-06 10:55:59,349 log 230 Not Found: /login.html
 WARNING 2022-05-06 10:55:59,351 basehttp 161 "GET /login.html HTTP/1.1" 404 2170
+INFO 2022-05-16 23:12:45,905 autoreload 637 Watching for file changes with StatReloader
