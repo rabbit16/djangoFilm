@@ -1,0 +1,23 @@
+Index: .idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"dataSourceStorageLocal\" created-in=\"PY-213.6777.50\">\r\n    <data-source name=\"myblog@localhost\" uuid=\"851dabbb-a896-4af1-abfa-895ecaaa2adc\">\r\n      <database-info product=\"\" version=\"\" jdbc-version=\"\" driver-name=\"\" driver-version=\"\" dbms=\"MYSQL\" exact-version=\"0\" />\r\n      <secret-storage>forget</secret-storage>\r\n      <schema-mapping />\r\n    </data-source>\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/dataSources.local.xml b/.idea/dataSources.local.xml
+--- a/.idea/dataSources.local.xml	
++++ b/.idea/dataSources.local.xml	
+@@ -6,5 +6,13 @@
+       <secret-storage>forget</secret-storage>
+       <schema-mapping />
+     </data-source>
++    <data-source name="myblog@localhost [2]" uuid="924622f5-ce20-4022-9bb6-dce72d758107">
++      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
++      <schema-mapping />
++    </data-source>
++    <data-source name="djf@localhost" uuid="97dd908c-ed31-4f96-b733-d21084c44804">
++      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
++      <schema-mapping />
++    </data-source>
+   </component>
+ </project>
+\ No newline at end of file

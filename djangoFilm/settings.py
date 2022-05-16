@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "index",
-    "verifications"
+    "verifications",
+    "users",
+    "administer",
+    "online_help"
 ]
 
 MIDDLEWARE = [
