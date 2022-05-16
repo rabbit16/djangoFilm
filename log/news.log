@@ -113,4 +113,183 @@ WARNING 2022-05-06 10:55:44,026 basehttp 161 "GET /images/gallery/14.jpg HTTP/1.
 WARNING 2022-05-06 10:55:44,026 basehttp 161 "GET /images/gallery/15.jpg HTTP/1.1" 404 2203
 WARNING 2022-05-06 10:55:59,349 log 230 Not Found: /login.html
 WARNING 2022-05-06 10:55:59,351 basehttp 161 "GET /login.html HTTP/1.1" 404 2170
-INFO 2022-05-16 23:12:45,905 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:22:59,575 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:23:44,212 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:24:09,852 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:29:14,438 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:39:38,104 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:40:17,971 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:40:59,596 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:41:06,104 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:41:08,873 basehttp 161 "GET / HTTP/1.1" 200 11037
+INFO 2022-05-16 17:41:09,239 basehttp 161 "GET /static/css/index1.1.css HTTP/1.1" 200 2434
+INFO 2022-05-16 17:41:09,249 basehttp 161 "GET /static/css/footer.css HTTP/1.1" 200 169
+INFO 2022-05-16 17:41:09,259 basehttp 161 "GET /static/css/header.css HTTP/1.1" 200 2407
+INFO 2022-05-16 17:41:09,279 basehttp 161 "GET /static/js/photo.js HTTP/1.1" 200 1148
+WARNING 2022-05-16 17:41:09,313 log 230 Not Found: /images/code.jpg
+WARNING 2022-05-16 17:41:09,313 basehttp 161 "GET /static/css/next_page.css HTTP/1.1" 404 1810
+WARNING 2022-05-16 17:41:09,323 basehttp 161 "GET /static/css/goods_list.css HTTP/1.1" 404 1813
+WARNING 2022-05-16 17:41:09,326 log 230 Not Found: /images/banner/2.jpg
+WARNING 2022-05-16 17:41:09,326 log 230 Not Found: /images/banner/1.jpg
+WARNING 2022-05-16 17:41:09,334 basehttp 161 "GET /images/code.jpg HTTP/1.1" 404 3204
+WARNING 2022-05-16 17:41:09,334 log 230 Not Found: /images/logo.png
+WARNING 2022-05-16 17:41:09,350 basehttp 161 "GET /images/banner/2.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:41:09,358 basehttp 161 "GET /images/banner/1.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:41:09,366 log 230 Not Found: /images/banner/3.jpg
+WARNING 2022-05-16 17:41:09,366 basehttp 161 "GET /images/logo.png HTTP/1.1" 404 3204
+WARNING 2022-05-16 17:41:09,374 log 230 Not Found: /images/banner/4.jpg
+WARNING 2022-05-16 17:41:09,382 log 230 Not Found: /images/banner/5.jpg
+WARNING 2022-05-16 17:41:09,382 basehttp 161 "GET /images/banner/3.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:41:09,390 basehttp 161 "GET /images/banner/4.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:41:09,398 basehttp 161 "GET /images/banner/5.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:41:09,398 log 230 Not Found: /images/gallery/01.jpg
+WARNING 2022-05-16 17:41:09,406 log 230 Not Found: /images/camera.jpg
+WARNING 2022-05-16 17:41:09,414 log 230 Not Found: /images/gallery/02.jpg
+WARNING 2022-05-16 17:41:09,430 basehttp 161 "GET /images/gallery/01.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,430 basehttp 161 "GET /images/camera.jpg HTTP/1.1" 404 3210
+WARNING 2022-05-16 17:41:09,438 log 230 Not Found: /images/gallery/03.jpg
+WARNING 2022-05-16 17:41:09,438 log 230 Not Found: /images/gallery/04.jpg
+WARNING 2022-05-16 17:41:09,446 log 230 Not Found: /images/gallery/05.jpg
+WARNING 2022-05-16 17:41:09,446 basehttp 161 "GET /images/gallery/02.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,454 basehttp 161 "GET /images/gallery/03.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,454 basehttp 161 "GET /images/gallery/04.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,454 basehttp 161 "GET /images/gallery/05.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,462 log 230 Not Found: /images/gallery/07.jpg
+WARNING 2022-05-16 17:41:09,470 log 230 Not Found: /images/gallery/06.jpg
+WARNING 2022-05-16 17:41:09,494 basehttp 161 "GET /images/gallery/07.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,494 basehttp 161 "GET /images/gallery/06.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,502 log 230 Not Found: /images/gallery/08.jpg
+WARNING 2022-05-16 17:41:09,502 log 230 Not Found: /images/gallery/09.jpg
+WARNING 2022-05-16 17:41:09,510 log 230 Not Found: /images/gallery/10.jpg
+WARNING 2022-05-16 17:41:09,518 log 230 Not Found: /images/gallery/11.jpg
+WARNING 2022-05-16 17:41:09,526 basehttp 161 "GET /images/gallery/08.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,526 basehttp 161 "GET /images/gallery/10.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,526 basehttp 161 "GET /images/gallery/09.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,526 log 230 Not Found: /images/gallery/12.jpg
+WARNING 2022-05-16 17:41:09,534 basehttp 161 "GET /images/gallery/11.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,534 log 230 Not Found: /images/gallery/13.jpg
+WARNING 2022-05-16 17:41:09,550 basehttp 161 "GET /images/gallery/12.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,550 basehttp 161 "GET /images/gallery/13.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,550 log 230 Not Found: /images/gallery/15.jpg
+WARNING 2022-05-16 17:41:09,558 log 230 Not Found: /images/gallery/14.jpg
+WARNING 2022-05-16 17:41:09,558 basehttp 161 "GET /images/gallery/15.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:09,558 basehttp 161 "GET /images/gallery/14.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:41:20,735 log 230 Not Found: /login.html
+WARNING 2022-05-16 17:41:20,735 basehttp 161 "GET /login.html HTTP/1.1" 404 3189
+WARNING 2022-05-16 17:41:20,864 log 230 Not Found: /favicon.ico
+WARNING 2022-05-16 17:41:20,864 basehttp 161 "GET /favicon.ico HTTP/1.1" 404 3192
+WARNING 2022-05-16 17:41:23,425 basehttp 161 "GET /static/css/next_page.css HTTP/1.1" 404 1810
+WARNING 2022-05-16 17:41:23,433 basehttp 161 "GET /static/css/goods_list.css HTTP/1.1" 404 1813
+WARNING 2022-05-16 17:41:24,834 log 230 Not Found: /regist.html
+WARNING 2022-05-16 17:41:24,842 basehttp 161 "GET /regist.html HTTP/1.1" 404 3192
+INFO 2022-05-16 17:42:50,397 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:42:52,187 basehttp 161 "GET / HTTP/1.1" 200 11037
+WARNING 2022-05-16 17:42:52,568 log 230 Not Found: /images/code.jpg
+WARNING 2022-05-16 17:42:52,576 basehttp 161 "GET /static/css/next_page.css HTTP/1.1" 404 1810
+WARNING 2022-05-16 17:42:52,576 log 230 Not Found: /images/logo.png
+WARNING 2022-05-16 17:42:52,576 basehttp 161 "GET /static/css/goods_list.css HTTP/1.1" 404 1813
+WARNING 2022-05-16 17:42:52,584 basehttp 161 "GET /images/code.jpg HTTP/1.1" 404 3204
+WARNING 2022-05-16 17:42:52,584 basehttp 161 "GET /images/logo.png HTTP/1.1" 404 3204
+WARNING 2022-05-16 17:42:52,632 log 230 Not Found: /images/banner/1.jpg
+WARNING 2022-05-16 17:42:52,632 log 230 Not Found: /images/banner/5.jpg
+WARNING 2022-05-16 17:42:52,640 basehttp 161 "GET /images/banner/1.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:42:52,640 log 230 Not Found: /images/banner/2.jpg
+WARNING 2022-05-16 17:42:52,648 basehttp 161 "GET /images/banner/5.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:42:52,648 log 230 Not Found: /images/banner/3.jpg
+WARNING 2022-05-16 17:42:52,656 log 230 Not Found: /images/banner/4.jpg
+WARNING 2022-05-16 17:42:52,656 basehttp 161 "GET /images/banner/2.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:42:52,664 basehttp 161 "GET /images/banner/3.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:42:52,664 basehttp 161 "GET /images/banner/4.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:42:52,672 log 230 Not Found: /images/gallery/01.jpg
+WARNING 2022-05-16 17:42:52,688 log 230 Not Found: /images/camera.jpg
+WARNING 2022-05-16 17:42:52,696 basehttp 161 "GET /images/gallery/01.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,696 log 230 Not Found: /images/gallery/02.jpg
+WARNING 2022-05-16 17:42:52,696 log 230 Not Found: /images/gallery/03.jpg
+WARNING 2022-05-16 17:42:52,696 basehttp 161 "GET /images/camera.jpg HTTP/1.1" 404 3210
+WARNING 2022-05-16 17:42:52,704 log 230 Not Found: /images/gallery/04.jpg
+WARNING 2022-05-16 17:42:52,704 basehttp 161 "GET /images/gallery/02.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,712 basehttp 161 "GET /images/gallery/03.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,720 basehttp 161 "GET /images/gallery/04.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,728 log 230 Not Found: /images/gallery/05.jpg
+WARNING 2022-05-16 17:42:52,752 basehttp 161 "GET /images/gallery/05.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,752 log 230 Not Found: /images/gallery/06.jpg
+WARNING 2022-05-16 17:42:52,752 log 230 Not Found: /images/gallery/08.jpg
+WARNING 2022-05-16 17:42:52,760 log 230 Not Found: /images/gallery/07.jpg
+WARNING 2022-05-16 17:42:52,768 log 230 Not Found: /images/gallery/09.jpg
+WARNING 2022-05-16 17:42:52,768 basehttp 161 "GET /images/gallery/08.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,768 basehttp 161 "GET /images/gallery/06.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,768 basehttp 161 "GET /images/gallery/07.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,768 basehttp 161 "GET /images/gallery/09.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,776 log 230 Not Found: /images/gallery/10.jpg
+WARNING 2022-05-16 17:42:52,808 basehttp 161 "GET /images/gallery/10.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,816 log 230 Not Found: /images/gallery/13.jpg
+WARNING 2022-05-16 17:42:52,816 log 230 Not Found: /images/gallery/14.jpg
+WARNING 2022-05-16 17:42:52,824 log 230 Not Found: /images/gallery/11.jpg
+WARNING 2022-05-16 17:42:52,824 log 230 Not Found: /images/gallery/12.jpg
+WARNING 2022-05-16 17:42:52,824 basehttp 161 "GET /images/gallery/13.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,824 basehttp 161 "GET /images/gallery/14.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,824 basehttp 161 "GET /images/gallery/11.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,832 log 230 Not Found: /images/gallery/15.jpg
+WARNING 2022-05-16 17:42:52,832 basehttp 161 "GET /images/gallery/12.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:52,832 basehttp 161 "GET /images/gallery/15.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:42:54,834 log 230 Not Found: /regist.html
+WARNING 2022-05-16 17:42:54,834 basehttp 161 "GET /regist.html HTTP/1.1" 404 3192
+WARNING 2022-05-16 17:42:54,946 log 230 Not Found: /favicon.ico
+WARNING 2022-05-16 17:42:54,946 basehttp 161 "GET /favicon.ico HTTP/1.1" 404 3192
+INFO 2022-05-16 17:43:40,582 autoreload 637 Watching for file changes with StatReloader
+INFO 2022-05-16 17:43:43,321 basehttp 161 "GET / HTTP/1.1" 200 11037
+WARNING 2022-05-16 17:43:43,689 log 230 Not Found: /images/logo.png
+WARNING 2022-05-16 17:43:43,697 log 230 Not Found: /images/banner/1.jpg
+WARNING 2022-05-16 17:43:43,697 basehttp 161 "GET /static/css/next_page.css HTTP/1.1" 404 1810
+WARNING 2022-05-16 17:43:43,705 log 230 Not Found: /images/banner/2.jpg
+WARNING 2022-05-16 17:43:43,705 basehttp 161 "GET /static/css/goods_list.css HTTP/1.1" 404 1813
+WARNING 2022-05-16 17:43:43,713 basehttp 161 "GET /images/logo.png HTTP/1.1" 404 3204
+WARNING 2022-05-16 17:43:43,713 log 230 Not Found: /images/code.jpg
+WARNING 2022-05-16 17:43:43,728 basehttp 161 "GET /images/banner/1.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:43:43,745 basehttp 161 "GET /images/banner/2.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:43:43,761 log 230 Not Found: /images/banner/3.jpg
+WARNING 2022-05-16 17:43:43,769 basehttp 161 "GET /images/code.jpg HTTP/1.1" 404 3204
+WARNING 2022-05-16 17:43:43,777 log 230 Not Found: /images/banner/4.jpg
+WARNING 2022-05-16 17:43:43,777 basehttp 161 "GET /images/banner/3.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:43:43,785 log 230 Not Found: /images/gallery/01.jpg
+WARNING 2022-05-16 17:43:43,785 log 230 Not Found: /images/banner/5.jpg
+WARNING 2022-05-16 17:43:43,793 log 230 Not Found: /images/camera.jpg
+WARNING 2022-05-16 17:43:43,793 basehttp 161 "GET /images/banner/4.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:43:43,801 basehttp 161 "GET /images/gallery/01.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,801 basehttp 161 "GET /images/banner/5.jpg HTTP/1.1" 404 3216
+WARNING 2022-05-16 17:43:43,809 log 230 Not Found: /images/gallery/02.jpg
+WARNING 2022-05-16 17:43:43,809 basehttp 161 "GET /images/camera.jpg HTTP/1.1" 404 3210
+WARNING 2022-05-16 17:43:43,825 log 230 Not Found: /images/gallery/03.jpg
+WARNING 2022-05-16 17:43:43,841 basehttp 161 "GET /images/gallery/02.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,849 log 230 Not Found: /images/gallery/04.jpg
+WARNING 2022-05-16 17:43:43,857 basehttp 161 "GET /images/gallery/03.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,873 log 230 Not Found: /images/gallery/06.jpg
+WARNING 2022-05-16 17:43:43,873 basehttp 161 "GET /images/gallery/04.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,881 log 230 Not Found: /images/gallery/05.jpg
+WARNING 2022-05-16 17:43:43,889 basehttp 161 "GET /images/gallery/06.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,897 log 230 Not Found: /images/gallery/07.jpg
+WARNING 2022-05-16 17:43:43,905 log 230 Not Found: /images/gallery/08.jpg
+WARNING 2022-05-16 17:43:43,921 basehttp 161 "GET /images/gallery/05.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,929 log 230 Not Found: /images/gallery/09.jpg
+WARNING 2022-05-16 17:43:43,929 basehttp 161 "GET /images/gallery/07.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,937 basehttp 161 "GET /images/gallery/08.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,937 log 230 Not Found: /images/gallery/10.jpg
+WARNING 2022-05-16 17:43:43,945 basehttp 161 "GET /images/gallery/09.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,953 log 230 Not Found: /images/gallery/11.jpg
+WARNING 2022-05-16 17:43:43,977 basehttp 161 "GET /images/gallery/10.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,977 log 230 Not Found: /images/gallery/12.jpg
+WARNING 2022-05-16 17:43:43,977 basehttp 161 "GET /images/gallery/11.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,985 log 230 Not Found: /images/gallery/13.jpg
+WARNING 2022-05-16 17:43:43,993 log 230 Not Found: /images/gallery/14.jpg
+WARNING 2022-05-16 17:43:43,993 basehttp 161 "GET /images/gallery/12.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:43,993 basehttp 161 "GET /images/gallery/13.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:44,001 log 230 Not Found: /images/gallery/15.jpg
+WARNING 2022-05-16 17:43:44,001 basehttp 161 "GET /images/gallery/14.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:44,001 basehttp 161 "GET /images/gallery/15.jpg HTTP/1.1" 404 3222
+WARNING 2022-05-16 17:43:48,857 basehttp 161 "GET /static/css/next_page.css HTTP/1.1" 404 1810
+WARNING 2022-05-16 17:43:48,857 basehttp 161 "GET /static/css/goods_list.css HTTP/1.1" 404 1813
+WARNING 2022-05-16 17:44:03,736 log 230 Not Found: /regist.html
+WARNING 2022-05-16 17:44:03,736 basehttp 161 "GET /regist.html HTTP/1.1" 404 3192
+WARNING 2022-05-16 17:44:03,896 log 230 Not Found: /favicon.ico
+WARNING 2022-05-16 17:44:03,896 basehttp 161 "GET /favicon.ico HTTP/1.1" 404 3192
+WARNING 2022-05-16 17:44:06,785 basehttp 161 "GET /static/images/camera.ico HTTP/1.1" 404 1810
