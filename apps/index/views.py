@@ -30,19 +30,19 @@ class Login(View):
     #         "errno": '1'
     #     })
     def post(self, request):
-        username = request.POST.get['username']
-        password = request.POST.get['password']
+        username = request.body.get("username")
+        password = request.body.get("password")
         # 与数据库中的用户名和密码比对，django默认保存密码是以哈希形式存储，并不是明文密码，这里的password验证默认调用的是User类的check_password方法，以哈希值比较。
         user = authenticate(request, username=username, password=password)
         # 验证如果用户不为空
         if user is not None:
             # login方法登录
-            login(request, user)
+            # login(request, user)
             # 返回登录成功信息
-            return HttpResponse('登陆成功')
+            return HttpResponse('index.html')
         else:
             # 返回登录失败信息
-            return HttpResponse('登陆失败')
+            return HttpResponse('登陆失败，未注册或密码错误！')
 
 #
 class Register(View):
