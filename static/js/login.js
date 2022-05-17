@@ -87,10 +87,15 @@ $(function () {
   // 判断用户名是否已经注册
   function fn_check_username() {
     let sUsername = $username.val();  // 获取用户名字符串
+    let sPassword = $password.val(); //获取用户密码字符串
     let sReturnValue = "";
 
     if (sUsername === "") {
       message.showError('用户名不能为空！');
+      return
+    }
+    if (sPassword === "") {
+      message.showError('密码不能为空！');
       return
     }
 
@@ -112,6 +117,27 @@ $(function () {
           sReturnValue = ""
         } else {
           message.showInfo(log.data.username + '已注册！');
+          sReturnValue = ""
+        }
+      })
+      .fail(function () {
+        message.showError('服务器超时，请重试！');
+        sReturnValue = ""
+      });
+
+    // 发送ajax请求，去后端查询密码是否匹配
+    $.ajax({
+      url: '/password/' + sPassword + '/',
+      type: 'GET',
+      dataType: 'json',
+      async: false//这里要是True就是异步，如果是False就是同步
+    })
+      .done(function (log) {
+        if (log.data.password !== sPassword) {
+          message.showError(log.data.password + '密码输入错误！');
+          sReturnValue = ""
+        } else {
+          message.showInfo(log.data.password + '密码正确！');
           sReturnValue = "success"
         }
       })
