@@ -5,5 +5,6 @@ urlpatterns = [
     path('pics/<uuid:img_codes>/', views.ImageCode.as_view(), name='register'),
     path('username/<username>/', views.UserNameCheck.as_view(), name='username_check'),
     path('mobiles/<mobile>/', views.MobileCheck.as_view(), name='mobile')
+    # path('pics/<uuid:img_codes>/',views.ImageCode.as_view(),name = 'image_code'),
     # path("login/", views.Login.as_view(), name="login")
 ]
