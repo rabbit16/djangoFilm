@@ -1,13 +1,13 @@
 $(function () {
   let $username = $('#user_name');  // 选择id为user_name的网页元素，需要定义一个id为user_name
   let $password = $('#password');  // 选择id为pwd的网页元素，需要定义一个id为pwd
-  let $register = $('.form-contain');  // 获取注册表单元素
+  let $login = $('.form-contain');  // 获取注册表单元素
 
 
   // 2、用户名验证逻辑
-  $username.blur(function () {
-    fn_check_username();
-  });
+  // $username.blur(function () {
+  //   fn_check_username();
+  // });
 
   // 5、登录逻辑
   $login.submit(function (e) {
@@ -20,27 +20,14 @@ $(function () {
     // let sPasswordRepeat = $("input[name=password_repeat]").val();
 
     // 判断用户名是否已注册
-    if (fn_check_username() !== "success") {
-      return
-    }
-
-
-    // 判断用户输入的密码是否为空
-    // if ((!sPassword) || (!sPasswordRepeat)) {
-    //   message.showError('密码或确认密码不能为空');
+    // if (fn_check_username() !== "success") {
     //   return
     // }
 
-    // 判断用户输入的密码和确认密码长度是否为6-20位
-    // if ((sPassword.length < 6 || sPassword.length > 20) ||
-    //   (sPasswordRepeat.length < 6 || sPasswordRepeat.length > 20)) {
+    // if (sPassword.length < 6 || sPassword.length > 20) {
     //   message.showError('密码和确认密码的长度需在6～20位以内');
     //   return
     // }
-    if (sPassword.length < 6 || sPassword.length > 20) {
-      message.showError('密码和确认密码的长度需在6～20位以内');
-      return
-    }
     //
     // // 判断用户输入的密码和确认密码是否一致
     // if (sPassword !== sPasswordRepeat) {
