@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="928fb21b-68de-4042-8d02-42fde92ec92f" name="Changes" comment="删除test">
-      <change beforePath="$PROJECT_DIR$/log/news.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/news.log" afterDir="false" />
+    <list default="true" id="928fb21b-68de-4042-8d02-42fde92ec92f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/show/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/show/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/show/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/show/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/show/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/show/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/show/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="guitu" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,15 +51,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../syn" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.manage">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/djangoFilm/templates/index/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="captcha" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="djangoFilm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Python.manage" />
         <item itemvalue="Python.views" />
         <item itemvalue="Python.captcha" />
         <item itemvalue="Python.manage" />
-        <item itemvalue="Python.captcha" />
       </list>
     </recent_temporary>
   </component>
@@ -146,6 +156,7 @@
       <workItem from="1652177433256" duration="20234000" />
       <workItem from="1652343942352" duration="16903000" />
       <workItem from="1652435676524" duration="7969000" />
+      <workItem from="1652543978382" duration="8082000" />
     </task>
     <task id="LOCAL-00001" summary="首页">
       <created>1651805819951</created>
@@ -189,12 +200,12 @@
       <option name="project" value="LOCAL" />
       <updated>1652436346984</updated>
     </task>
-    <task id="LOCAL-00007" summary="首页">
-      <created>1652710091131</created>
+    <task id="LOCAL-00007" summary="我创建了四个app，包括用户，管理，展示和人工服务">
+      <created>1652710900972</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1652710091131</updated>
+      <updated>1652710900972</updated>
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />
@@ -202,25 +213,14 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="首页" />
-    <option name="LAST_COMMIT_MESSAGE" value="首页" />
+    <MESSAGE value="我创建了四个app，包括用户，管理，展示和人工服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="我创建了四个app，包括用户，管理，展示和人工服务" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/djangoFilm$views.coverage" NAME="views Coverage Results" MODIFIED="1652488678215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/index" />
+    <SUITE FILE_PATH="coverage/djangoFilm$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652435825919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/djangoFilm$captcha.coverage" NAME="captcha Coverage Results" MODIFIED="1652348470721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils/captcha" />
-    <SUITE FILE_PATH="coverage/djangoFilm$manage.coverage" NAME="manage Coverage Results" MODIFIED="1652710143413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

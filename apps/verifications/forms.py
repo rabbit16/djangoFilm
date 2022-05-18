@@ -9,7 +9,7 @@ import re
 from django import forms
 from django.contrib.auth import login
 from django.db.models import Q
-from index.models import User
+from users.models import User
 from django_redis import get_redis_connection
 
 from .constant_params import OUT_TIME

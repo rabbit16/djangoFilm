@@ -40,8 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "index",
-    "verifications"
+    "verifications",
+    "users",
+    "administer",
+    "online_help"
 ]
 
 MIDDLEWARE = [
@@ -203,7 +205,7 @@ MEDIA_URL = '/media/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # 用于存放静态文件
 ]
-AUTH_USER_MODEL = 'index.User'  # 指定替换的用户模型类
+AUTH_USER_MODEL = 'users.User'  # 指定替换的用户模型类
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
