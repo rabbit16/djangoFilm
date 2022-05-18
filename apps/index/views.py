@@ -30,8 +30,10 @@ class Login(View):
     #         "errno": '1'
     #     })
     def post(self, request):
-        username = request.body.get("username")
-        password = request.body.get("password")
+
+        user_info = json.loads(request.body.decode())
+        username = user_info.get("username")
+        password = user_info.get("password")
         # 与数据库中的用户名和密码比对，django默认保存密码是以哈希形式存储，并不是明文密码，这里的password验证默认调用的是User类的check_password方法，以哈希值比较。
         user = authenticate(request, username=username, password=password)
         try:
@@ -42,7 +44,7 @@ class Login(View):
                 # data = {
                 #     'errno': Code.OK
                 # }
-            return render(reqeust, "login.html", {"errno": Code.OK});
+            return to_json_data(errno=Code.OK, errmsg=error_map[Code.OK])
         except:
             return to_json_data(errno=Code.NODATA, errmsg=error_map[Code.PICERROR])
         #     # 返回登录成功信息

@@ -61,7 +61,7 @@ $(function () {
           message.showSuccess('恭喜你，登录成功！');
            setTimeout(() => {
             // 登录成功之后重定向到主页
-            window.location.href = '/article/';
+            window.location.href = '/';
           }, 1500)
         } else {
           // 注册失败，打印错误信息
@@ -166,5 +166,5 @@ $(function () {
       }
     }
   });
-  generateImageCode()
+  // generateImageCode()
 });
