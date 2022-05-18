@@ -20,6 +20,7 @@ class index(View):
     def post(self, request):
         pass
 
+
 class Login(View):
 
     def get(self, request):
@@ -68,6 +69,7 @@ class Register(View):
         else:
             userInfo["gender"] = False
         registerForm = RegisterForm(userInfo)
+
         try:
             if registerForm.is_valid():
                 user = User.objects.create_user(username=registerForm.cleaned_data.get('username'),
