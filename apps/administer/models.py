@@ -18,9 +18,9 @@ class Ticket(models.Model):
     def __str__(self):
         return self.Ticket_id
 class Times(models.Model):  # 电影场次
-    S_user = models.ManyToManyField(User)
-    S_studio = models.ManyToManyField('Studio')
-    S_seat = models.ManyToManyField('Seat')
+    S_user = models.ForeignKey(User, on_delete=models.CASCADE)
+    S_studio = models.ForeignKey('Studio', on_delete=models.CASCADE)
+    S_seat = models.ForeignKey('Seat', on_delete=models.CASCADE)
     S_movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     session = models.IntegerField(verbose_name="场次", help_text="场次")
 
