@@ -34,15 +34,24 @@ class Login(View):
         password = request.body.get("password")
         # 与数据库中的用户名和密码比对，django默认保存密码是以哈希形式存储，并不是明文密码，这里的password验证默认调用的是User类的check_password方法，以哈希值比较。
         user = authenticate(request, username=username, password=password)
-        # 验证如果用户不为空
-        if user is not None:
-            # login方法登录
-            # login(request, user)
-            # 返回登录成功信息
-            return HttpResponse('index.html')
-        else:
-            # 返回登录失败信息
-            return HttpResponse('登陆失败，未注册或密码错误！')
+        try:
+            # 验证如果用户不为空
+            if user is not None:
+                # login方法登录
+                login(request, user)
+                # data = {
+                #     'errno': Code.OK
+                # }
+            return render(reqeust, "login.html", {"errno": Code.OK});
+        except:
+            return to_json_data(errno=Code.NODATA, errmsg=error_map[Code.PICERROR])
+        #     # 返回登录成功信息
+        #     # return HttpResponse('index.html')
+        #     return redirect("/index/") #这点确实不会，等学长
+        #     # return render(request, 'index.html')
+        # else:
+        #     # 返回登录失败信息
+        #     return HttpResponse('登陆失败，未注册或密码错误！')
 
 #
 class Register(View):
@@ -74,3 +83,25 @@ class Register(View):
             return to_json_data(data=data)
         except:
             return to_json_data(errno=Code.NODATA, errmsg=error_map[Code.PICERROR])
+
+#
+class Movie(View):
+
+    def get(self, request):
+        return render(request, "index/movie.html")
+
+    def post(self, request):
+        return json.dumps({
+            "errno": '1'
+        })
+
+#
+class Rank(View):
+
+    def get(self, request):
+        return render(request, "index/rank.html")
+
+    def post(self, request):
+        return json.dumps({
+            "errno": '1'
+        })
