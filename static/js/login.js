@@ -62,7 +62,7 @@ $(function () {
            setTimeout(() => {
             // 登录成功之后重定向到主页
             window.location.href = '/';
-          }, 1500)
+          }, 1000)
         } else {
           // 注册失败，打印错误信息
           message.showError(log.errmsg);

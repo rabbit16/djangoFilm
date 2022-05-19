@@ -63,9 +63,9 @@
     float: left;
 }
 
-#header .h_c_logo img{
-    width: 200px;
-    height:120px;
+#header .header_center .h_c_logo img{
+    width: 100px;
+    height:100px;
     margin-top:4px ;
 }
 
@@ -85,9 +85,9 @@
 #header .h_c_search form .t_button{
     width: 75px;
     height: 40px;
-    border: 1px solid gray;
+    border: 1px solid grey;
     float: right;
-    color: orange;
+    color: #ff00c8;
     margin-left: 5px;
 
 

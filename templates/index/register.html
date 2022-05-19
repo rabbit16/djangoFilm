@@ -1,32 +1,30 @@
 {% extends "index/index.html" %}
 {% load static %}
 
+{% block title %}<title>注册</title>{% endblock %}
+<base href="/">
 {% block link %}
+    <link rel="shortcut icon" href="{% static 'images/logo.png' %}">
     <link rel="stylesheet" href="{% static 'css/regist.css' %}">
-{#    <link rel="shortcut icon" href="images/camera.ico">#}
-    <link rel="shortcut icon" href="{% static 'images/camera.ico' %}">
-{% endblock %}
-
-{% block banner %}
 
 {% endblock %}
-{#    <link rel="stylesheet" href="css/regist.css">#}
+
 
 <!--头部-->
 {% block header %}
-    <div id="reg_header">
+<div id="reg_header">
     <div class="reg_h_center">
         <div class="reg_h_left">
             <img src="{% static 'images/logo.png' %}" alt="">
-            <h3>欢迎注册</h3>
+            <h2>欢迎注册</h2>
         </div>
     </div>
 </div>
 {% endblock %}
 
-{% block next_button %}
-
+{% block banner %}
 {% endblock %}
+
 
 {% block main %}
     <div class="reg_back">
@@ -93,10 +91,14 @@
         </div>
     </div>
     <div class="reg_right">
-        <p>已有账号?<a href="login.html">立即登录</a></p>
+        <p>已有账号?<a href="{% url 'index:login' %}">立即登录</a></p>
     </div>
 </div>
 {% endblock %}
+
+{% block next_button %}
+{% endblock %}
+
 
 {% block script %}
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
