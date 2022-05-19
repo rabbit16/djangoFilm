@@ -6,7 +6,8 @@ from django.shortcuts import render,HttpResponse
 # Create your views here.
 from django.views import View
 
-from index.models import User
+# from index.models import User
+from users.models import User
 from utils.res_code import to_json_data, Code, error_map
 from verifications.forms import RegisterForm
 from django.contrib.auth import authenticate, login
