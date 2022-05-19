@@ -1,11 +1,12 @@
-asgiref==3.5.1
-async-timeout==4.0.2
+asgiref
+async-timeout
 certifi==2021.10.8
 Deprecated==1.2.13
 Django==3.2.13
 django-redis==5.2.0
 importlib-metadata==4.11.3
 packaging==21.3
+Pillow==9.1.0
 PyMySQL==1.0.2
 pyparsing==3.0.8
 pytz==2022.1
