@@ -6,7 +6,7 @@ from django_redis import get_redis_connection
 import logging
 from utils.res_code import to_json_data
 # Create your views here.
-from index.models import User
+from users.models import User
 from django.views import View
 
 logger = logging.getLogger('django')
